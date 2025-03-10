@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import HelloWorld from './components/HelloWorld';
+import Person from './components/Person';
+import SayMyName from './components/SayMyName';
 
 function App() {
+  const name = 'Heiseinberg'
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id='container'>
+      <p className='paragraph'>Primeiro app react</p>
+      <HelloWorld />
+      <SayMyName name={name} />
+      <Person name={name} age="52" occupation="Drug Dealer" image="/mr-white.jpeg"/>
     </div>
   );
 }
