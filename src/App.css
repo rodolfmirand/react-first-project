@@ -1,13 +1,3 @@
 #container {
   text-align: center;
-
-  .paragraph {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 40px;
-  }
-
-  #person-image {
-    width: 150px;
-    height: auto;
-  }
 }

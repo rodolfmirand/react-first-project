@@ -1,17 +1,16 @@
 import './App.css';
-import HelloWorld from './components/HelloWorld';
-import Person from './components/Person';
-import SayMyName from './components/SayMyName';
+import List from './components/List';
+import Person from './components/person/Person';
+import SayMyName from './components/sayMyName/SayMyName';
 
 function App() {
-  const name = 'Heiseinberg'
+  const name = 'Walter White'
 
   return (
     <div id='container'>
-      <p className='paragraph'>Primeiro app react</p>
-      <HelloWorld />
-      <SayMyName name={name} />
-      <Person name={name} age="52" occupation="Drug Dealer" image="/mr-white.jpeg"/>
+      <SayMyName name="Heisenberg" />
+      <Person name={name} age="52" occupation="Drug Dealer" image="/mr-white.jpeg" />
+      <List />
     </div>
   );
 }
