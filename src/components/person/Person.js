@@ -1,4 +1,5 @@
 import styles from './Person.module.css'
+import PropTypes from 'prop-types'
 
 function Person({name, age, occupation, image}) {
     return (
@@ -10,4 +11,9 @@ function Person({name, age, occupation, image}) {
         </div>
     )
 }
+
+Person.propTypes = {
+    age: PropTypes.number.isRequired
+}
+
 export default Person
