@@ -1,6 +1,7 @@
-.fraseConteiner {
+.fraseContainer {
     display: flex;
     justify-content: center;
+    padding: 100px;
 }
 
 .fraseContent {

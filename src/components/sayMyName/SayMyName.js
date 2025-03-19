@@ -2,7 +2,7 @@ import styles from './SayMyName.module.css'
 
 function SayMyName(props) {
     return (
-        <div className={styles.fraseConteiner}>
+        <div className={styles.fraseContainer}>
             <p className={styles.fraseContent} >
                 - Now... Say my name.
                 <br></br>
