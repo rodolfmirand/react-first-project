@@ -8,7 +8,7 @@ function Form() {
         console.log(`User registred! Name: ${name} | Password: ${password}`)
     }
 
-    const [name, setName] = useState('Default')
+    const [name, setName] = useState()
     const [password, setPassword] = useState()
 
     return (

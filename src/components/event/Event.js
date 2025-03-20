@@ -1,15 +1,24 @@
+import Button from './Button'
 import styles from './Event.module.css'
 
 function Event({ number }) {
 
-    function myEvent() {
-        console.log(`Activated. Number: ${number}`)
+    var numberCounter = 0
+
+    function count() {
+        console.log(`Counter: ${numberCounter}`)
+        numberCounter += 1
+    }
+
+    function showNumber() {
+        console.log(`Number: ${number}`)
     }
 
     return (
         <div className={styles.eventContainer}>
             <p>Click to active event</p>
-            <button onClick={myEvent}>Click here!</button>
+            <Button event={count} text='First event' />
+            <Button event={showNumber} text='Second event' />
         </div>
     )
 }
