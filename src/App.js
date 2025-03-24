@@ -1,20 +1,18 @@
-import './App.css';
-import Person from './components/person/Person';
-import SayMyName from './components/sayMyName/SayMyName';
-import Event from './components/event/Event';
-import Form from './components/form/Form'
-import Conditional from './components/Conditional';
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import Home from './pages/Home'
+import Empresa from './pages/Empresa'
+import Contato from './pages/Contato'
 
 function App() {
-  const name = 'Walter White'
-
   return (
-    <div id='container'>
-      <Person name={name} age={52} occupation="Drug Dealer" image="/mr-white.jpeg" />
-      <SayMyName name="Heisenberg" />
-      <Conditional />
-    </div>
-  );
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/contato" element={<Contato />} />
+        <Route path="/empresa" element={<Empresa />} />
+      </Routes>
+    </Router>
+  )
 }
 
 export default App;
